@@ -3,24 +3,529 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet"/>
+
     <link href="index.css"
+          rel="stylesheet"/>
+
+    <link href="../../vendors/fontawesome/css/all.css"
           rel="stylesheet"/>
 </head>
 <body>
 
-<div class="wd-border wd-padding-left wd-padding-top">
+<div class="container">
+    <div class="row m-2">
+        <!--navigation-->
+        <!--code for tuiter-->
+        <!--<div class="wd-navigation col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2">-->
+        <!--code for challenge-->
+        <div class="wd-navigation col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2">
+            <nav class="list-group">
+                <!--code for tuiter : all other links are same as this code in tuiter-->
+                <!--<a href="#" class="list-group-item list-group-item-action">-->
+                <!--code for challenge-->
+                <a href="#" class="list-group-item override-lgi list-group-item-action">
+                    <!--<i class="fab fa-twitter"></i>-->
+                    <i class="fa fa-t"></i>
+                </a>
+                <a href="../home.html" class="list-group-item override-lgi list-group-item-action">
+                    <i class="fas fa-home float-start me-1 mt-1"></i>
+                    <span class="d-none d-xxl-block d-xl-block">Home</span>
+                </a>
+                <a href="index.html" class="list-group-item override-lgi list-group-item-action active">
+                    <i class="fas fa-hashtag float-start me-1 mt-1"></i>
+                    <span class="d-none d-xxl-block d-xl-block">Explore</span>
+                </a>
+                <a href="#" class="list-group-item override-lgi list-group-item-action">
+                    <i class="fas fa-bell float-start me-1 mt-1"></i>
+                    <span class="d-none d-xxl-block d-xl-block">Notifications</span>
+                </a>
+                <a href="#" class="list-group-item override-lgi list-group-item-action">
+                    <i class="fas fa-envelope float-start me-1 mt-1"></i>
+                    <span class="d-none d-xxl-block d-xl-block">Messages</span>
+                </a>
+                <a href="../bookmarks/index.html" class="list-group-item override-lgi list-group-item-action">
+                    <i class="fas fa-bookmark float-start me-1 mt-1"></i>
+                    <span class="d-none d-xxl-block d-xl-block">Bookmarks</span>
+                </a>
+                <a href="#" class="list-group-item override-lgi override-lgi list-group-item-action">
+                    <i class="fas fa-list-ul float-start me-1 mt-1"></i>
+                    <span class="d-none d-xxl-block d-xl-block">List</span>
+                </a>
+                <a href="../profile.html" class="list-group-item override-lgi list-group-item-action">
+                    <i class="fas fa-user float-start me-1 mt-1"></i>
+                    <span class="d-none d-xxl-block d-xl-block">Profile</span>
+                </a>
+                <a href="#" class="list-group-item override-lgi list-group-item-action">
+                    <i class="fas fa-ellipsis-h float-start me-1 mt-1"></i>
+                    <span class="d-none d-xxl-block d-xl-block ">More</span>
+                </a>
+                <button type="button" class="btn btn-primary rounded-pill mt-3">Tuit</button>
+            </nav>
+        </div>
+
+        <!--main content-->
+        <!--code for tuiter-->
+        <!--<div class=" col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10 col-10">-->
+        <!--code for challenge-->
+        <div class="wd-main-content col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10 col-10">
+            <!--search filed-->
+            <!--code for tuiter-->
+            <!--<div class="row align-items-center m-0">
+                <div class="col-10">
+                    <i class="fas fa-search position-absolute p-1 m-2"></i>
+                    <input class="form-control rounded-pill p-2" type="text" placeholder="Search Tuiter">
+                </div>
+                <div class="col-2">
+                    <a href="explore-setting.html">
+                        <i class="fas fa-cog fa-2x float-end"></i>
+                    </a>
+                </div>
+            </div>-->
+            <!--code for challenge-->
+            <div class="row align-items-center m-0">
+                <div class="col-10">
+                    <i class="fas fa-search position-absolute p-1 m-2 wd-icon-search"></i>
+                    <input class="form-control bg-dark border-dark rounded-pill p-2" type="text" placeholder="Search Tuiter">
+                </div>
+                <div class="col-2">
+                    <a href="explore-setting.html">
+                        <i class="fas fa-cog fa-2x float-end wd-gear"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--navigation bar-->
+            <!--code for tuiter-->
+            <!--<ul class="nav nav-tabs navbar-expand mt-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">COVID-19</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item d-sm-none d-md-block">
+                    <a href="#" class="nav-link">Entertainment</a>
+                </li>
+            </ul>-->
+            <!--code for challenge-->
+            <ul class="nav nav-tabs override-tabs navbar-expand mt-2">
+                <li class="nav-item">
+                    <a class="nav-link override-lk bg-black active" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link override-lk" href="./others/trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link override-lk" href="./others.news.html">COVID-19</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link override-lk" href="./otherssports.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link override-lk" href="./othersentertainment.html">Sports</a>
+                </li>
+                <li class="nav-item d-sm-none d-md-block">
+                    <a href="#" class="nav-link override-lk">Entertainment</a>
+                </li>
+            </ul>
+
+            <!--image--->
+            <div class="mt-2 position-relative">
+                <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=1390&crop=1"
+                     class="w-100" alt="SpaceX's Starship">
+                <!--code for tuiter-->
+                <!--<h1 class="text-white position-absolute bottom-0 m-2">SpaceX's Starship</h1>-->
+                <!--code for challenge-->
+                <p class="text-white position-absolute bottom-0 m-2">
+                    <span class="h6 small">
+                        News - Last night
+                    </span>
+                    <br>
+                    <span class="h1">
+                        SpaceX's Starship
+                    </span>
+                </p>
+            </div>
+
+            <!--text 1-->
+            <!--code for tuiter-->
+            <!--<div class="row m-0 border-top-0">
+                <div class="col-10 p-2">
+                    <div class="text-secondary ">Web Development</div>
+                    <span class="text-black fw-bold">ReactJS
+                        <i class="fas fa-check-circle fa-1x ps-1"></i>
+                    </span>
+                    <span class="text-secondary ps-1">- 2h</span>
+                    <p class="text-black fw-bold m-0">
+                        React.js is a component based front end library that makes it very
+                        easy to build Single Page Applications or SPAs
+                    </p>
+                </div>
+                <div class="col-2 wd-picture pb-2">
+                    <img src="ReactJs.png" class="float-end rounded-3 mt-3">
+                </div>
+            </div>-->
+            <!--code for challenge-->
+            <div class="row m-0 border border-dark">
+                <div class="col-10 p-2">
+                    <div class="text-secondary small">Web Development</div>
+                    <span class="wd-avatar">
+                        <img src="ReactJs.png" class="rounded-circle">
+                    </span>
+                    <span class="text-white fw-bold h6 small"> ReactJS
+                        <i class="fas fa-check-circle fa-1x ps-1"></i>
+                    </span>
+                    <span class="text-secondary ps-1 small">- 2h</span>
+                    <h5 class="text-white fw-bold m-0 pt-1">
+                        React.js is a component based front end library that makes it very
+                        easy to build Single Page Applications or SPAs
+                    </h5>
+                </div>
+                <div class="col-2 wd-picture pb-2">
+                    <img src="ReactJs.png" class="float-end rounded-3 mt-3">
+                </div>
+            </div>
+
+            <!--text 2-->
+            <!--code for tuiter-->
+            <!--<div class="row m-0 border border-top-0">
+                <div class="col-10 p-2">
+                    <span class="text-black fw-bold ">JavaScript
+                        <i class="fas fa-check-circle fa-1x ps-1"></i>
+                    </span>
+                    <span class="text-secondary ps-1">- 2h</span>
+                    <p class="text-black fw-bold m-0">
+                        JavaScript is a programming language that can run on browsers as well as desktops
+                    </p>
+                    <div class="text-secondary">123K Tuits</div>
+                </div>
+                <div class="col-2 wd-picture pb-2">
+                    <img src="JavaScript.png" class="float-end rounded-3 mt-3">
+                </div>
+            </div>-->
+            <!--code for challenge-->
+            <div class="row m-0 border border-dark">
+                <div class="col-10 p-2">
+                    <span class="wd-avatar">
+                        <img src="new-york.jpg" class="rounded-circle">
+                    </span>
+                    <span class="text-white fw-bold small">The Times
+                        <i class="fas fa-check-circle fa-1x ps-1"></i>
+                    </span>
+                    <span class="text-secondary ps-1 small">- 2h</span>
+                    <h5 class="text-white fw-bold m-0 pt-1">
+                        CNN's Cuomo conundrum: A star anchor with a brother in trouble
+                    </h5>
+                    <div class="text-secondary pt-1 small">113K Tuits</div>
+                </div>
+                <div class="col-2 wd-picture pb-2">
+                    <img src="new-york.jpg" class="float-end rounded-3 mt-3">
+                </div>
+            </div>
+
+            <!--text 3-->
+            <!--code for tuiter-->
+            <!--<div class="row m-0 border border-top-0">
+                <div class="col-10 p-2">
+                    <div class="text-secondary">Web Development</div>
+                    <div class="text-black fw-bold">JQuery</div>
+                    <div class="text-secondary">123K Tuits</div>
+                </div>
+                <div class="col-2 wd-picture pb-2">
+                    <i class="fas fa-check-circle fa-1x ps-1"></i>
+                </div>
+            </div>-->
+            <!--code for challenge-->
+            <div class="row m-0 border border-dark">
+                <div class="col-10 p-2">
+                    <div class="text-secondary small">Trending in United States</div>
+                    <h5 class="text-white fw-bold pt-1">Wonder Bread</h5>
+                    <div class="text-secondary small">115K Tuits</div>
+                </div>
+                <div class="col-2">
+                    <i class="fas fa-ellipsis-h float-end wd-icon-more me-1 mt-2"></i>
+                </div>
+            </div>
+
+            <!--text 4-->
+            <!--code for tuiter-->
+            <!--<div class="row m-0 border border-top-0">
+                <div class="col-10 p-2">
+                    <div class="text-secondary">Web Development</div>
+                    <div class="text-black fw-bold">NodeJS</div>
+                    <div class="text-secondary">123K Tuits</div>
+                </div>
+                <div class="col-2 wd-picture pb-2">
+                    <img src="nodejs.png" class="float-end rounded mt-3">
+                </div>
+            </div>-->
+            <!--code for challenge-->
+            <div class="row m-0 border border-dark">
+                <div class="col-10 p-2">
+                    <div class="text-secondary small">Entertainment</div>
+                    <h5 class="text-white fw-bold pt-1">Han Lu: Concert in Beijing</h5>
+                </div>
+                <div class="col-2 wd-picture pb-2">
+                    <img src="luhan-post.jpg" class="float-end rounded mt-3">
+                </div>
+            </div>
+
+            <!--text 5 for challenge-->
+            <div class="row m-0 border border-dark">
+                <div class="col-10 p-2">
+                    <span class="wd-avatar">
+                        <img src="Bloomberg-Opinion.jpg" class="rounded-circle">
+                    </span>
+                    <span class="text-white fw-bold small">Bloomberg Opinion
+                        <i class="fas fa-check-circle fa-1x ps-1"></i>
+                    </span>
+                    <span class="text-secondary ps-1 small">- 5h</span>
+                    <h5 class="text-white fw-bold m-0 pt-1">
+                        Thinking about getting a booster? Read this first.
+                    </h5>
+                </div>
+                <div class="col-2 wd-picture pb-2">
+                    <img src="Bloomberg-Opinion.jpg" class="float-end rounded-3 mt-3">
+                </div>
+            </div>
+
+            <!--text 6 for challenge-->
+            <div class="row m-0 border border-dark">
+                <div class="col-10 p-2">
+                    <span class="text-secondary small">COVID-19</span>
+                    <span class="text-secondary ps-1 small">-  LIVE</span>
+                    <h5 class="text-white fw-bold m-0 pt-1">
+                        COVID-19: News and updates for Massachusetts
+                    </h5>
+                </div>
+                <div class="col-2 wd-picture pb-2">
+                    <img src="COVID-19.jpg" class="float-end rounded-3 mt-3">
+                </div>
+            </div>
+
+        </div>
+
+        <!--Who to follow-->
+        <div class="d-none d-lg-block d-xl-block d-xxl-block col-xxl-4 col-xl-4 col-lg-4">
+            <!--Who to follow-->
+            <!--code for tuiter-->
+            <!--<div class="row ms-0 border rounded-top">
+                <div class="text-black m-2 fw-bold">Who to follow</div>
+            </div>-->
+            <!--code for challenge-->
+            <div class="row ms-0 border border-dark rounded-corners-top bg-dark">
+                <div class="text-white m-2 fw-bold">Who to follow</div>
+            </div>
+
+            <!--follow 1-->
+            <!--code for tuiter-->
+            <!--<div class="row ms-0 border border-top-0 py-2">
+                <div class="col-2 wd-follower">
+                    <img src="java.png" class="rounded-circle"></div>
+                <div class="col-8">
+                        <span class="text-black fw-bold">Java
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    <div class="text-secondary">@Java</div>
+                </div>
+                <div class="col-2 mt-1">
+                    <button type="button" class="btn btn-primary rounded-pill float-end">Follow</button>
+                </div>
+            </div>-->
+            <!--code for challenge-->
+            <div class="row ms-0 border border-dark border-top-0 py-2 bg-dark">
+                <div class="col-2 wd-follower">
+                    <img src="java.png" class="rounded-circle"></div>
+                <div class="col-8">
+                        <span class="text-white fw-bold">Java
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    <div class="text-secondary">@Java</div>
+                </div>
+                <div class="col-2 mt-1">
+                    <button type="button" class="btn btn-primary override-bs rounded-pill float-end">Follow</button>
+                </div>
+            </div>
+
+            <!--follow 2-->
+            <!--code for tuiter-->
+            <!--<div class="row ms-0 border border-top-0 py-2">
+                <div class="col-2 wd-follower">
+                    <img src="Relativity-Space.jpg" class="rounded-circle"></div>
+                <div class="col-7">
+                        <span class="text-black fw-bold">Relativity Space
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    <div class="text-secondary">@relativityspace</div>
+                </div>
+                <div class="col-3 mt-1">
+                    <button type="button" class="btn btn-primary rounded-pill float-end">Follow</button>
+                </div>
+            </div>-->
+            <!--code for challenge-->
+            <div class="row ms-0 border border-dark border-top-0 py-2 bg-dark">
+                <div class="col-2 wd-follower">
+                    <img src="Relativity-Space.jpg" class="rounded-circle"></div>
+                <div class="col-7">
+                        <span class="text-white fw-bold">Relativity Space
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    <div class="text-secondary">@relativityspace</div>
+                </div>
+                <div class="col-3 mt-1">
+                    <button type="button" class="btn btn-primary override-bs rounded-pill float-end">Follow</button>
+                </div>
+            </div>
+
+            <!--follow 3-->
+            <!--code for tuiter-->
+            <!--<div class="row ms-0 border border-top-0 py-2">
+                <div class="col-2 wd-follower">
+                    <img src="Virgin-Galactic.png" class="rounded-circle">
+                </div>
+                <div class="col-7">
+                        <span class="text-black fw-bold">Virgin Galactic
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    <div class="text-secondary small">@virgingalactic</div>
+                </div>
+                <div class="col-3 mt-1">
+                    <button type="button" class="btn btn-primary rounded-pill float-end">Follow</button>
+                </div>
+            </div>-->
+            <!--code for challenge-->
+            <div class="row ms-0 border border-dark border-top-0 py-2 bg-dark">
+                <div class="col-2 wd-follower">
+                    <img src="Virgin-Galactic.png" class="rounded-circle">
+                </div>
+                <div class="col-7">
+                        <span class="text-white fw-bold">Virgin Galactic
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    <div class="text-secondary small">@virgingalactic</div>
+                </div>
+                <div class="col-3 mt-1">
+                    <button type="button" class="btn btn-primary override-bs rounded-pill float-end">Follow</button>
+                </div>
+            </div>
+
+            <!--follow 4-->
+            <!--code for tuiter-->
+            <!--<div class="row ms-0 border border-top-0 py-2">
+                <div class="col-2 wd-follower">
+                    <img src="NASA.png" class="rounded-circle">
+                </div>
+                <div class="col-7">
+                        <span class="text-black fw-bold">NASA
+                            <i class="fas fa-check-circle ps-1"></i>
+                        </span>
+                    <div class="text-secondary small">@NASA</div>
+                </div>
+                <div class="col-3 mt-1">
+                    <button type="button" class="btn btn-primary rounded-pill float-end">Follow</button>
+                </div>
+            </div>-->
+            <!--code for challenge-->
+            <div class="row ms-0 border border-dark border-top-0 py-2 bg-dark">
+                <div class="col-2 wd-follower">
+                    <img src="NASA.png" class="rounded-circle">
+                </div>
+                <div class="col-7">
+                        <span class="text-white fw-bold">NASA
+                            <i class="fas fa-check-circle ps-1"></i>
+                        </span>
+                    <div class="text-secondary small">@NASA</div>
+                </div>
+                <div class="col-3 mt-1">
+                    <button type="button" class="btn btn-primary override-bs rounded-pill float-end">Follow</button>
+                </div>
+            </div>
+
+            <!--follow 5-->
+            <!--code for tuiter-->
+            <!--<div class="row ms-0 border border-top-0 rounded-bottom py-2">
+                <div class="col-2 wd-follower">
+                    <img src="Telsa.png" class="rounded-circle">
+                </div>
+                <div class="col-7">
+                        <span class="text-black fw-bold">Telsa
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    <div class="text-secondary">@Tesla</div>
+                </div>
+                <div class="col-3 mt-1">
+                    <button type="button" class="btn btn-primary rounded-pill float-end">Follow</button>
+                </div>
+            </div>-->
+            <!--code for challenge-->
+            <div class="row ms-0 border border-dark border-top-0 rounded-bottom py-2 bg-dark">
+                <div class="col-2 wd-follower">
+                    <img src="Telsa.png" class="rounded-circle">
+                </div>
+                <div class="col-7">
+                        <span class="text-white fw-bold">Telsa
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    <div class="text-secondary">@Tesla</div>
+                </div>
+                <div class="col-3 mt-1">
+                    <button type="button" class="btn btn-primary override-bs rounded-pill float-end">Follow</button>
+                </div>
+            </div>
+
+            <!--Show more for challenge-->
+            <div class="row ms-0 border border-dark border-top-0 rounded-bottom py-2 bg-dark">
+                <a class="wd-link border-0" href="#">Show more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--code for a3-->
+<!--<div class="wd-border wd-padding-left wd-padding-top">
     <div class="wd-flex-input-container">
         <input class="wd-input" placeholder="Search Tuiter"/>
         <a href="explore-setting.html"><img src="icons/gear-blue.png" class="wd-gear-blue"/></a>
     </div>
+</div>
 
+<div class="wd-border wd-padding-left wd-padding-top">
     <div class="wd-flex-b-container">
-        <div class="wd-hyperlink-highlighted">For you</div>
-        <div class="wd-hyperlinks">Trending</div>
-        <div class="wd-hyperlinks">COVID-19</div>
-        <div class="wd-hyperlinks">News</div>
-        <div class="wd-hyperlinks">Sports</div>
-        <div class="wd-hyperlinks">Entertainment</div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">For you</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">COVID-19</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Entertainment</a>
+            </li>
+        </ul>
     </div>
 </div>
 
@@ -55,7 +560,7 @@
 <div class="wd-border wd-padding-left wd-padding-top wd-padding-posts-right">
     <div class="wd-grid-posts-container">
         <div>
-            <p class="wd-posts-topic">COVID-19 - LIVE</p>
+            <p class="wd-posts-topic">COVID-19 ~ LIVE</p>
             <p class="wd-posts-title">COVID-19: News and updates for Massachusetts</p>
         </div>
         <img class="wd-posts-images" src="COVID-19.jpg"/>
@@ -88,7 +593,7 @@
         </div>
         <img class="wd-posts-images" src="luhan-post.jpg"/>
     </div>
-</div>
+</div>-->
 
 </body>
 </html>
