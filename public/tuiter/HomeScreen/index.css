@@ -1,0 +1,14 @@
+.wd-post-image img {
+    height: 70px;
+    width: 70px;
+}
+.wd-more {
+    color: dimgray;
+}
+.wd-border {
+    border-color: dimgray !important;
+}
+.wd-avatar img {
+    height: 50px;
+    width: 50px;
+}

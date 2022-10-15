@@ -1,0 +1,25 @@
+/*Getting and setting attributes*/
+.class-0 {
+    background-color: red;
+    color: white;
+}
+
+/*Adding and removing classes*/
+/*add*/
+.class-1 {
+    background-color: blue;
+    color: white;
+}
+/*remove*/
+.class-2 {
+    background-color: green;
+    color: yellow;
+}
+
+/*Hiding and showing content*/
+.im-hidden {
+    display: none;
+}
+
+/*Creating new elements*/
+

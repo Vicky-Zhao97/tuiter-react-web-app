@@ -1,3 +1,7 @@
+.wd-post-image img {
+    height: 70px;
+    width: 70px;
+}
 /*
 body{
     background-color:black;
@@ -109,9 +113,9 @@ body{
 */
 
 /*a4-tuiter*/
-input {
+/*input {
     text-indent: 30px;
-    /*add following code in challenge*/
+    !*add following code in challenge*!
     background-color: lightgray;
 }
 
@@ -123,9 +127,10 @@ input {
 .wd-follower img {
     width: 40px;
     height: 40px;
-}
+}*/
 
 /*a4-challenge*/
+/*
 body {
     background-color: black;
 }
@@ -195,6 +200,7 @@ body {
     width: 15px;
     height: 15px;
 }
+*/
 
 
 
