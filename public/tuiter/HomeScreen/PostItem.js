@@ -22,27 +22,33 @@ const PostItem = (post) => {
                 </div>
                 <div class="row ms-1">
                     <div>
-                        <img src=${post.image} class=" border wd-border border-2 rounded w-100">
-                        ${post.title ? `<div class="fw-bold text-white border wd-border border-bottom-0 ps-2 pe-2"> ${post.title}</div>` :""}
-                        ${post.content ? `<div class="text-secondary border wd-border border-top-0 rounded-bottom ps-2 pb-2 pe-2"> ${post.content}</div>`:""}
+                        ${post.title ? `<img src=${post.image} class=" border wd-border border-2 rounded-top w-100">` : `<img src=${post.image} class=" border wd-border border-2 rounded w-100">`}
+                        ${post.title ? `<div class="fw-bold text-white border wd-border border-bottom-0 ps-3 pe-3"> ${post.title}</div>` :""}
+                        ${post.content ? `<div class="text-secondary border wd-border border-top-0 rounded-bottom ps-3 pb-2 pe-3"> ${post.content}</div>`:""}
                     </div>  
                 </div>
                 <div class="row mt-2 ms-1">
-                    <div class="col-3">
-                        
-                        <span class="text-secondary"><i class="fa-regular fa-comment"></i>${post.comment}</span>
+                    <div class="col-1">
+                        <span class="text-secondary"><i class="fa-regular fa-comment"></i></span>
                     </div>
-                    <div class="col-3">
-                        
-                        <span class="text-secondary"><i class="fas fa-retweet"></i>${post.retweet}</span>
+                    <div class="col-2">
+                        <span class="text-secondary">${post.comment}</span>
                     </div>
-                    <div class="col-3">
-                        
-                        <span class="text-secondary"><i class="fa-regular fa-heart"></i>${post.heart}</span>
+                    <div class="col-1">
+                        <span class="text-secondary"><i class="fas fa-retweet"></i></span>
+                    </div>
+                    <div class="col-2">
+                    <span class="text-secondary">${post.retweet}</span>
+                    </div>
+                    <div class="col-1">
+                        <span class="text-secondary"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+                    <div class="col-2">
+                    <span class="text-secondary">${post.heart}</span>
                     </div>
                     <div class="col-3">
                         <span class="text-secondary"><i class="fas fa-arrow-up-from-bracket"></i></span>
-                    </div>  
+                    </div> 
                 </div>           
           </div>  
      </div>

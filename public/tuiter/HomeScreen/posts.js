@@ -7,7 +7,7 @@ export default [
         topic: 'Lorem ipsum dolor sit amet <a href="#" class="text-decoration-none">@lorem</a>',
         image: '../../images/luhan5.jpg',
         title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non tortor ut risus dignissim pharetra. Curabitur a diam molestie, blandit nisl elementum, commodo tortor.',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non tortor ut risus dignissim pharetra. Curabitur a diam molestie, blandit nisl elementum, commodo tortor...',
         comment: '4.2k',
         retweet: '3.5k',
         heart:'37.5k',
