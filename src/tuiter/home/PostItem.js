@@ -21,7 +21,7 @@ const PostItem = (
     return(
         <div className="row mb-4 mt-1">
             <div className="col-1 wd-avatar">
-                <img src={post.avatar} className="rounded-circle"/>
+                <img src={post.avatar} className="rounded-circle" alt={"avatar"}/>
             </div>
             <div className="col-11">
                 <div className="row ms-1">
@@ -42,13 +42,13 @@ const PostItem = (
                 <div className="row ms-1">
                     <div>
                         {post.title
-                          ? <img src={post.image} class=" wd-border border rounded-top w-100"/>
-                          : <img src={post.image} class="wd-border border rounded w-100"/>}
+                          ? <img src={post.image} className=" wd-border border rounded-top w-100" alt={"posts"}/>
+                          : <img src={post.image} className="wd-border border rounded w-100" alt={"posts"}/>}
                         {post.title
-                          ? <div class="fw-bold border wd-border border-bottom-0 ps-3 pe-3"> {post.title}</div>
+                          ? <div className="fw-bold border wd-border border-bottom-0 ps-3 pe-3"> {post.title}</div>
                           : ""}
                         {post.content
-                          ? <div class="text-secondary border wd-border border-top-0 rounded-bottom ps-3 pb-2 pe-3"> {post.content}</div>
+                          ? <div className="text-secondary border wd-border border-top-0 rounded-bottom ps-3 pb-2 pe-3"> {post.content}</div>
                           : ""}
                     </div>
                 </div>
