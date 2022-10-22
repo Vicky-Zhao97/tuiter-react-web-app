@@ -1,0 +1,21 @@
+[
+    {
+        "id": 123,
+        "userName": "NASA",
+        "handle": "NASA",
+        "avatarIcon": "nasa.png"
+    },
+    {
+        "id": 234,
+        "userName": "Tesla",
+        "handle": "tesla",
+        "avatarIcon": "Telsa.png"
+    },
+    {
+        "id": 345,
+        "userName": "Relativity Space",
+        "handle": "relativityspace",
+        "avatarIcon": "Relativity-Space.jpg"
+    }
+]
+
