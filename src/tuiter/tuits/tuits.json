@@ -1,0 +1,45 @@
+[
+  {
+    "id": 123,
+    "topic": "JavaScript",
+    "userName": "JavaScript",
+    "time": "1 day",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops",
+    "image": "JavaScript.png",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@javascript",
+    "tuit": "JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[10] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM)."
+  },
+  {
+    "id": 234,
+    "topic": "Web Development",
+    "userName": "jQuery",
+    "time": "last week",
+    "title": "jQuery is a fast, small, and feature-rich JavaScript library.",
+    "image": "JQuery.png",
+    "liked": false,
+    "replies": 111,
+    "retuits": 222,
+    "likes": 2554,
+    "handle": "@jquery",
+    "tuit": "jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, theme-able widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications."
+  },
+  {
+    "id": 345,
+    "topic": "Web Development",
+    "userName": "NodeJS",
+    "time": "last month",
+    "title": "NodeJS is an open-source, cross-platform JavaScript runtime environment.",
+    "image": "nodejs.png",
+    "liked": false,
+    "replies": 122,
+    "retuits": 555,
+    "likes": 1234,
+    "handle": "@nodejs",
+    "tuit": "Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games)."
+  }
+]
+
