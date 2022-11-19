@@ -7,7 +7,7 @@ const PostSummaryList = () => {
     const {tuits, loading} = useSelector(
         state => state.tuitsData)
     const dispatch = useDispatch();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
     useEffect(() => {
         dispatch(findTuitsThunk())
     }, [])
