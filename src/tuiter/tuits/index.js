@@ -1,4 +1,35 @@
-import React from "react";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector}
+    from "react-redux";
+import './index.css'
+import {findTuitsThunk}
+    from "../../services/tuits-thunks";
+import TuitItem from "./TuitItem";
+
+const TuitsList = () => {
+    const {tuits, loading} = useSelector(
+        state => state.tuitsData)
+    const dispatch = useDispatch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    useEffect(() => {
+        dispatch(findTuitsThunk())
+    }, [])
+    return(
+        <ul className="list-group">
+            {
+                loading &&
+                <li className="list-group-item">
+                    Loading...
+                </li>
+            }
+            {tuits.map(tuit => <TuitItem tuit={tuit}/> )}
+        </ul>
+    );
+};
+export default TuitsList;
+
+
+/*import React from "react";
 import {useSelector} from "react-redux";
 import TuitItem from './TuitItem'
 import './index.css'
@@ -16,7 +47,7 @@ const TuitsList = () => {
         </div>
     );
 };
-export default TuitsList;
+export default TuitsList;*/
 /*
 import React from "react";
 import TuitItem

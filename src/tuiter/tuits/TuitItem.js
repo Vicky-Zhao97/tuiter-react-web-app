@@ -1,7 +1,50 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+// import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
+import TuitStats from "./TuitStats";
+
+const TuitsItem = ({tuit}) => {
+
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        //dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
+    }
+    return(
+        <div className="row border rounded">
+            <div className="col-1 wd-avatar mt-2">
+                <img src={`/images/${tuit.image}`} className="rounded-circle" alt={"avatar"}/>
+            </div>
+            <div className="col-11 mt-2">
+                <div className="row">
+                    <div className="col-11">
+                        <span className="fw-bold">{tuit.userName}
+                            <i className="bi bi-patch-check-fill text-primary ps-1"></i>
+                        </span>
+                        <span className="text-secondary ps-1">{tuit.handle} - {tuit.time}
+                        </span>
+                    </div>
+                    <div className="col-1">
+                        <i className="bi bi-x-lg float-end"
+                           onClick={() => deleteTuitHandler(tuit._id)}></i>
+                    </div>
+                </div>
+                <div className="row text-secondary ps-1 me-3">
+                    <p>{tuit.tuit}</p>
+                </div>
+                <TuitStats key={tuit._id} tuit={tuit}/>
+            </div>
+        </div>
+    );
+};
+export default TuitsItem;
+/*
+import React from "react";
 import "./index.css";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+//import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 import TuitStats from "./TuitStats";
 const TuitItem = (
     {
@@ -24,7 +67,8 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        //dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <div className="row border rounded">
@@ -54,3 +98,4 @@ const TuitItem = (
     );
 };
 export default TuitItem;
+*/

@@ -1,4 +1,48 @@
 import React from "react";
+import {updateTuitThunk} from "../../services/tuits-thunks";
+import {useDispatch} from "react-redux";
+import "./index.css";
+
+const TuitsStats = ({tuit}) => {
+    const dispatch = useDispatch();
+    return(
+        <div className="row mt-1 mb-2">
+            <div className="col-2">
+                <div className="col-4 text-secondary">
+                    <i className="bi bi-chat float-start"></i>
+                </div>
+                <div className="col-8 ps-4 me-0 text-secondary small">{tuit.replies}</div>
+            </div>
+            <div className="col-2">
+                <div className="col-4 text-secondary">
+                    <i className="bi bi-repeat float-start"></i>
+                </div>
+                <div className=" col-8 ps-4 me-0 text-secondary small">{tuit.retuits}</div>
+            </div>
+            <div className="col-2">
+                <div className="col-4 text-secondary">
+                    <i onClick={() => dispatch(updateTuitThunk({...tuit, likes: tuit.likes + 1}))}
+                       className="bi bi-heart-fill text-danger float-start"></i>
+                </div>
+                {/*{tuit.liked? <i className="bi bi-heart-fill text-danger"></i> : <i className="bi bi-heart text-secondary"></i>}*/}
+                <div className=" col-8 ps-4 me-0 text-secondary small">{tuit.likes}</div>
+            </div>
+            <div className="col-2">
+                <i onClick={() => dispatch(updateTuitThunk({...tuit, dislikes: tuit.dislikes + 1}))}
+                   className="bi bi-hand-thumbs-down-fill text-danger float-start"></i>
+                <div className=" col-8 ps-4 me-0 text-secondary small">{tuit.dislikes}</div>
+            </div>
+            <div className="col-2">
+                <i className="bi bi-share text-secondary"></i>
+            </div>
+        </div>
+    );
+};
+export default TuitsStats;
+
+
+/*
+import React from "react";
 import "./index.css";
 const TuitStats = ({
     tuit = {
@@ -44,3 +88,4 @@ const TuitStats = ({
 };
 export default TuitStats;
 
+*/
