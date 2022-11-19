@@ -34,7 +34,7 @@ const TuitsStats = ({tuit}) => {
                    /*className={tuit.disliked?
                               "bi bi-hand-thumbs-down-fill text-danger float-start" :
                               "bi bi-hand-thumbs-down-fill text-secondary float-start"}></i>*/
-                   className={"bi bi-hand-thumbs-down-fill text-secondary float-start"}</i>
+                   className="bi bi-hand-thumbs-down-fill text-secondary float-start"></i>
                 <div className=" col-8 ps-4 me-0 text-secondary small">{tuit.dislikes}</div>
             </div>
             <div className="col-2">
